@@ -7,7 +7,7 @@ function getResult() {
   if (txId) {
     error.innerHTML = "";
     stagesDiv.innerHTML = signersDiv.innerHTML = "";
-    const stagesUri = 'https://thornode.ninerealms.com/thorchain/alpha/tx/stages/' + txId;
+    const stagesUri = 'https://thornode.ninerealms.com/thorchain/tx/stages/' + txId;
     const signersUri = `https://thornode.ninerealms.com/thorchain/tx/${txId}/signers`;
     
     const xhr = new XMLHttpRequest();
